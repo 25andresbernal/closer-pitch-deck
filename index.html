@@ -39,9 +39,9 @@
   .card:hover{border-color:var(--border-glow)}
   .card-icon{width:42px;height:42px;border-radius:12px;background:var(--primary-dim);border:1px solid rgba(251,130,29,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
   .card-icon svg{width:20px;height:20px;stroke:var(--primary);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-  .card-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;margin-bottom:5px}
-  .card-desc{font-size:13px;color:var(--muted);line-height:1.6}
-  .stat-val{font-family:'Space Grotesk',sans-serif;font-size:40px;font-weight:800;color:var(--primary);margin-bottom:5px}
+  .card-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px;margin-bottom:6px}
+  .card-desc{font-size:16px;color:var(--muted);line-height:1.6}
+  .stat-val{font-family:'Space Grotesk',sans-serif;font-size:44px;font-weight:800;color:var(--primary);margin-bottom:5px}
   .card-wide{display:flex;align-items:center;gap:18px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 26px;margin-top:14px;transition:border-color .2s}
   .card-wide:hover{border-color:var(--border-glow)}
 
@@ -55,19 +55,19 @@
   .cta-btn{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;border:none;border-radius:999px;padding:13px 28px;cursor:pointer;margin-top:24px;transition:opacity .2s;text-decoration:none}
   .cta-btn:hover{opacity:.88}
   .cta-btn svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
-  .tags{display:flex;gap:20px;font-size:13px;color:var(--muted);margin-top:14px;justify-content:center}
-  .ask-tags{display:flex;align-items:center;gap:12px;margin-top:28px;font-size:12px;color:var(--muted)}
+  .tags{display:flex;gap:20px;font-size:18px;color:var(--muted);margin-top:14px;justify-content:center}
+  .ask-tags{display:flex;align-items:center;gap:12px;margin-top:28px;font-size:17px;color:var(--muted)}
   .dot-sep{width:4px;height:4px;border-radius:50%;background:var(--primary);flex-shrink:0}
 
   /* Navbar — always pinned, never hidden */
   .navbar{position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);padding:0 16px;height:var(--nav-h);background:rgba(12,12,12,0.97);backdrop-filter:blur(10px);flex-shrink:0}
   .nav-dots{display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;flex:1;min-width:0}
   .nav-dots::-webkit-scrollbar{display:none}
-  .nav-dot{padding:5px 11px;border-radius:999px;font-size:12px;font-weight:600;color:var(--muted);border:none;background:transparent;cursor:pointer;transition:all .2s;white-space:nowrap;flex-shrink:0}
+  .nav-dot{padding:5px 14px;border-radius:999px;font-size:15px;font-weight:600;color:var(--muted);border:none;background:transparent;cursor:pointer;transition:all .2s;white-space:nowrap;flex-shrink:0}
   .nav-dot:hover{color:var(--text)}
   .nav-dot.active{background:var(--primary);color:#fff}
   .nav-right{display:flex;align-items:center;gap:6px;flex-shrink:0;margin-left:6px}
-  .nav-count{font-size:11px;color:var(--muted);white-space:nowrap;margin-right:4px}
+  .nav-count{font-size:13px;color:var(--muted);white-space:nowrap;margin-right:4px}
   .nav-btn{width:30px;height:30px;border-radius:7px;border:1px solid var(--border);background:transparent;color:var(--muted);display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s}
   .nav-btn:hover:not(:disabled){color:var(--text);border-color:rgba(255,255,255,0.2)}
   .nav-btn:disabled{opacity:.28;cursor:not-allowed}
@@ -88,7 +88,7 @@
     #s0 h1.title{font-size:68px !important;margin-bottom:5px !important}
     #s0 .sub{font-size:28px !important;margin-bottom:14px !important}
     #s0 .desc{font-size:16px !important;margin-bottom:14px !important}
-    .tags{gap:16px;font-size:13px;margin-top:12px}
+    .tags{gap:16px;font-size:15px;margin-top:12px}
 
     .label{font-size:11px;margin-bottom:8px}
     .slide h2.title{font-size:30px !important;margin-bottom:16px !important}
@@ -105,7 +105,7 @@
     .card-icon{width:36px;height:36px;border-radius:10px;margin-bottom:10px}
     .card-icon svg{width:17px;height:17px}
     .card-title{font-size:15px}
-    .card-desc{font-size:13px}
+    .card-desc{font-size:14px}
     .stat-val{font-size:32px}
     .card-wide{padding:14px 16px;gap:12px;margin-top:10px}
 
@@ -114,9 +114,9 @@
     #s5 h2.title{font-size:34px !important;margin-bottom:14px !important}
     #s5 .ask-desc{font-size:16px !important}
     .cta-btn{font-size:15px;padding:13px 26px;margin-top:20px}
-    .ask-tags{margin-top:18px;gap:10px;font-size:12px}
+    .ask-tags{margin-top:18px;gap:10px;font-size:14px}
 
-    .nav-dot{font-size:11px;padding:4px 9px}
+    .nav-dot{font-size:13px;padding:4px 10px}
   }
 
   @media(min-width:601px) and (max-width:900px){
@@ -139,7 +139,7 @@
       </div>
       <h1 class="title accent" style="font-size:96px;margin-bottom:6px">Closer</h1>
       <p class="title sub" style="font-size:42px;margin-bottom:16px;color:#e0e0e0">Your Best Rep. <span class="accent">Every Call.</span></p>
-      <p class="body-text desc" style="max-width:540px;font-size:17px;margin-bottom:16px">AI-powered sales agents trained on your top closers, handling live calls, overcoming objections, and booking appointments 24/7.</p>
+      <p class="body-text desc" style="max-width:540px;font-size:20px;margin-bottom:16px">AI-powered sales agents trained on your top closers, handling live calls, overcoming objections, and booking appointments 24/7.</p>
       <div class="tags"><span>AI Sales Tech</span><span>SaaS</span></div>
     </div>
 
@@ -149,23 +149,23 @@
       <h2 class="title" style="font-size:54px;margin-bottom:22px">Sales teams are <span class="accent">bleeding revenue</span></h2>
       <div class="prob-row">
         <div class="prob-icon"><svg viewBox="0 0 24 24"><path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07C9.44 17.29 8.71 16.56 8 15.83"/><path d="M1 1l22 22"/></svg></div>
-        <p style="font-size:14px;color:#d0d0d0">Missed calls and slow follow-ups lose deals every single day</p>
+        <p style="font-size:18px;color:#d0d0d0">Missed calls and slow follow-ups lose deals every single day</p>
       </div>
       <div class="prob-row">
         <div class="prob-icon"><svg viewBox="0 0 24 24"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg></div>
-        <p style="font-size:14px;color:#d0d0d0">Only 10–20% of reps are top closers, the rest consistently underperform</p>
+        <p style="font-size:18px;color:#d0d0d0">Only 10–20% of reps are top closers, the rest consistently underperform</p>
       </div>
       <div class="prob-row">
         <div class="prob-icon"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
-        <p style="font-size:14px;color:#d0d0d0">No visibility into where the pipeline breaks down or why deals are lost</p>
+        <p style="font-size:18px;color:#d0d0d0">No visibility into where the pipeline breaks down or why deals are lost</p>
       </div>
       <div class="prob-row">
         <div class="prob-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-        <p style="font-size:14px;color:#d0d0d0">Hiring is expensive, training takes months, and turnover kills ROI</p>
+        <p style="font-size:18px;color:#d0d0d0">Hiring is expensive, training takes months, and turnover kills ROI</p>
       </div>
       <div class="callout">
         <svg viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
-        <p style="font-size:13px;font-weight:600">Every weak objection handle is money left on the table</p>
+        <p style="font-size:17px;font-weight:600">Every weak objection handle is money left on the table</p>
       </div>
     </div>
 
