@@ -52,6 +52,33 @@
   .callout{display:flex;align-items:center;gap:12px;border:1px solid rgba(251,130,29,0.25);background:rgba(251,130,29,0.05);border-radius:12px;padding:13px 18px;margin-top:4px}
   .callout svg{width:16px;height:16px;stroke:var(--primary);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
 
+  .audio-card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:24px 28px;
+    max-width:760px;
+    width:100%;
+    margin-top:18px;
+    text-align:left;
+  }
+  .audio-title{
+    font-family:'Space Grotesk',sans-serif;
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:10px;
+  }
+  .audio-desc{
+    color:var(--muted);
+    font-size:16px;
+    line-height:1.6;
+    margin-bottom:18px;
+  }
+  .audio-player{
+    width:100%;
+    margin-top:8px;
+  }
+
   .cta-btn{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;border:none;border-radius:999px;padding:13px 28px;cursor:pointer;margin-top:24px;transition:opacity .2s;text-decoration:none}
   .cta-btn:hover{opacity:.88}
   .cta-btn svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
@@ -59,7 +86,6 @@
   .ask-tags{display:flex;align-items:center;gap:12px;margin-top:28px;font-size:17px;color:var(--muted)}
   .dot-sep{width:4px;height:4px;border-radius:50%;background:var(--primary);flex-shrink:0}
 
-  /* Navbar — always pinned, never hidden */
   .navbar{position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--border);padding:0 16px;height:var(--nav-h);background:rgba(12,12,12,0.97);backdrop-filter:blur(10px);flex-shrink:0}
   .nav-dots{display:flex;gap:2px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;flex:1;min-width:0}
   .nav-dots::-webkit-scrollbar{display:none}
@@ -73,13 +99,11 @@
   .nav-btn:disabled{opacity:.28;cursor:not-allowed}
   .nav-btn svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
 
-  /* ── MOBILE ── */
   @media(max-width:600px){
     :root{--nav-h:48px}
     .slide{padding:24px 22px;justify-content:flex-start;overflow-y:auto;-webkit-overflow-scrolling:touch}
     .slide.center{align-items:center;text-align:center;justify-content:center;padding:24px 22px;overflow-y:auto}
-    /* Short slides: center content */
-    #s0,#s1,#s5{justify-content:center}
+    #s0,#s1,#s6{justify-content:center}
     #s1{overflow-y:auto}
 
     .logo-icon{width:52px;height:52px;border-radius:14px;margin-bottom:16px}
@@ -111,8 +135,12 @@
 
     .market-body{font-size:14px !important;margin-bottom:16px !important}
 
-    #s5 h2.title{font-size:34px !important;margin-bottom:14px !important}
-    #s5 .ask-desc{font-size:16px !important}
+    .audio-card{padding:18px 16px}
+    .audio-title{font-size:20px}
+    .audio-desc{font-size:14px}
+
+    #s6 h2.title{font-size:34px !important;margin-bottom:14px !important}
+    #s6 .ask-desc{font-size:16px !important}
     .cta-btn{font-size:15px;padding:13px 26px;margin-top:20px}
     .ask-tags{margin-top:18px;gap:10px;font-size:14px}
 
@@ -153,7 +181,7 @@
       </div>
       <div class="prob-row">
         <div class="prob-icon"><svg viewBox="0 0 24 24"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg></div>
-        <p style="font-size:18px;color:#d0d0d0">Only 10–20% of reps are top closers, the rest consistently underperform</p>
+        <p style="font-size:18px;color:#d0d0d0">Only 10-20% of reps are top closers, the rest consistently underperform</p>
       </div>
       <div class="prob-row">
         <div class="prob-icon"><svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
@@ -182,8 +210,8 @@
         </div>
         <div class="card">
           <div class="card-icon"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-          <div class="stat-val">$5B+→$37B</div>
-          <p class="card-desc">AI sales-tech @22.1% CAGR 2024–29</p>
+          <div class="stat-val">$5B+ to $37B</div>
+          <p class="card-desc">AI sales-tech @22.1% CAGR 2024-29</p>
         </div>
         <div class="card">
           <div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
@@ -258,8 +286,29 @@
       </div>
     </div>
 
-    <!-- SLIDE 6: ASK -->
+    <!-- SLIDE 6: SNEAK PEEK -->
     <div class="slide center" id="s5">
+      <div class="logo-icon" style="margin:0 auto 18px">
+        <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      </div>
+      <p class="label">Product Demo</p>
+      <h2 class="title" style="font-size:56px;margin-bottom:14px;max-width:700px">Sneak <span class="accent">Peek</span> of Closer</h2>
+      <p class="body-text" style="max-width:620px;font-size:18px">
+        A quick listen to how Closer can handle live sales conversations, respond naturally, and move prospects toward booking.
+      </p>
+
+      <div class="audio-card">
+        <div class="audio-title">Closer Demo Recording</div>
+        <p class="audio-desc">Listen to a short sample of Closer in action.</p>
+        <audio class="audio-player" controls preload="metadata">
+          <source src="closer-demo.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+
+    <!-- SLIDE 7: ASK -->
+    <div class="slide center" id="s6">
       <div class="logo-icon" style="margin:0 auto 18px">
         <svg viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
       </div>
@@ -278,7 +327,6 @@
 
   </div>
 
-  <!-- NAVBAR — always visible -->
   <nav class="navbar">
     <div class="nav-dots">
       <button class="nav-dot active" onclick="goTo(0)">Intro</button>
@@ -286,10 +334,11 @@
       <button class="nav-dot" onclick="goTo(2)">Market</button>
       <button class="nav-dot" onclick="goTo(3)">Solution</button>
       <button class="nav-dot" onclick="goTo(4)">Why Us</button>
-      <button class="nav-dot" onclick="goTo(5)">Ask</button>
+      <button class="nav-dot" onclick="goTo(5)">Sneak Peek</button>
+      <button class="nav-dot" onclick="goTo(6)">Ask</button>
     </div>
     <div class="nav-right">
-      <span class="nav-count" id="counter">1 / 6</span>
+      <span class="nav-count" id="counter">1 / 7</span>
       <button class="nav-btn" id="prev-btn" onclick="go(-1)" disabled>
         <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
       </button>
@@ -301,7 +350,7 @@
 </div>
 
 <script>
-  const total = 6;
+  const total = 7;
   let current = 0, busy = false;
   const slides = document.querySelectorAll('.slide');
   const dots = document.querySelectorAll('.nav-dot');
@@ -310,35 +359,54 @@
   const nextBtn = document.getElementById('next-btn');
 
   function goTo(n) {
-    if (busy || n === current) return;
+    if (busy || n === current || n < 0 || n >= total) return;
     busy = true;
     const dir = n > current ? 1 : -1, old = current;
     current = n;
+
     slides[old].classList.remove('active');
     slides[old].classList.add(dir > 0 ? 'exit-left' : 'exit-right');
+
     slides[current].style.transform = `translateX(${dir > 0 ? '60px' : '-60px'})`;
     slides[current].style.opacity = '0';
     slides[current].classList.add('active');
+
     requestAnimationFrame(() => requestAnimationFrame(() => {
       slides[current].style.transform = '';
       slides[current].style.opacity = '';
     }));
-    setTimeout(() => { slides[old].classList.remove('exit-left','exit-right'); busy = false; }, 400);
+
+    setTimeout(() => {
+      slides[old].classList.remove('exit-left','exit-right');
+      busy = false;
+    }, 400);
+
     dots.forEach((d,i) => d.classList.toggle('active', i === current));
     counter.textContent = `${current + 1} / ${total}`;
     prevBtn.disabled = current === 0;
     nextBtn.disabled = current === total - 1;
   }
 
-  function go(d) { goTo(current + d); }
+  function go(d) {
+    goTo(current + d);
+  }
 
   document.addEventListener('keydown', e => {
-    if (e.key==='ArrowRight'||e.key===' '){e.preventDefault();go(1);}
-    if (e.key==='ArrowLeft'){e.preventDefault();go(-1);}
+    if (e.key === 'ArrowRight' || e.key === ' ') {
+      e.preventDefault();
+      go(1);
+    }
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      go(-1);
+    }
   });
 
   let touchX = 0;
-  document.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, {passive:true});
+  document.addEventListener('touchstart', e => {
+    touchX = e.touches[0].clientX;
+  }, {passive:true});
+
   document.addEventListener('touchend', e => {
     const diff = touchX - e.changedTouches[0].clientX;
     if (Math.abs(diff) > 50) go(diff > 0 ? 1 : -1);
